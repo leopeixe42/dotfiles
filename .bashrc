@@ -128,8 +128,9 @@ else
   WORKING_DIR="${BRIGHT_RED}\w${RESET}"
 fi
 
-RVM_GIT='($($rvm_bin_path/rvm-prompt)) $(__git_ps1 "[ %s ]")'
-export PS1="${USER_AT_HOST}:${WORKING_DIR} ${RVM_GIT}\n$ "
+# RVM_GIT='($($rvm_bin_path/rvm-prompt)) $(__git_ps1 "[ %s ]")'
+# export PS1="${USER_AT_HOST}:${WORKING_DIR} ${RVM_GIT}\n$ "
+export PS1="${USER_AT_HOST}:${WORKING_DIR} $(__git_ps1 "[ %s ]")\n$ "
 
 # Set vi mode
 # set -o vi
@@ -137,7 +138,7 @@ export PS1="${USER_AT_HOST}:${WORKING_DIR} ${RVM_GIT}\n$ "
 alias espresso='~/The-M-Project_v1.4.0/Espresso/bin/espresso.js'
 
 # pyenv init to enable shims and autocompletion
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

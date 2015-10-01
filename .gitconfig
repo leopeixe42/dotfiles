@@ -1,6 +1,6 @@
 [user]
-	name = Lucas Pélos
-	email = lucas.pelos@gmail.com
+	name = Leonardo Peixe
+	email = leonardopeixe42@gmail.com
 [alias]
 	st = status
 	co = checkout
@@ -10,7 +10,7 @@
 [credential]
 	helper = cache
 [core]
-	excludesfile = /home/lucas/.gitignore
+	excludesfile = /home/leonardo/.gitignore
 [push]
 	default = current
 [color]
